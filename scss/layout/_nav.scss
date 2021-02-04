@@ -1,0 +1,146 @@
+@media only screen and (min-width: 1300px) {
+    nav#smallScreen {
+        display: none;
+    }
+    #mobile-menu{
+        display: none;
+    }
+    nav#desktop {
+        margin-top: -17px;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        padding: 35px 25px 8px 25px;
+        font-weight: 600;
+        ul {
+            list-style: none;
+            display: flex;
+            img {
+                width: 200px;
+            }
+        }
+
+        ul#one {
+            margin-right: 30px;
+            justify-self: center;
+            margin-left: auto;
+        }
+        ul#two {
+            margin-right: 30px;
+            justify-self: flex-end;
+        }
+        li {
+            padding: 0 10px;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 12px;
+            }
+        }
+        li.right-margin {
+            border-right: 2px solid black;
+        }
+    }
+}
+
+
+// for tablets
+@media only screen and (min-width:500px) and (max-width: 1299px) {
+    nav#desktop {
+        display: none;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 62px;
+        z-index: 1;
+        right: 0px;
+        display: none;
+        list-style: none;
+        width: 50%;
+        height: 100%;
+        background-color:white;
+        li{
+            margin: 5px 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+       
+    }
+
+    nav#smallScreen {
+        display: flex;
+        background-color: white;
+        height: 40px;
+        width: 100%;
+        ul {
+            width: 80%;
+            display: flex;
+            list-style: none;
+            li.logo {
+                margin-right: auto;
+            }
+        }
+
+         img.bar {
+             width: 30px;
+             height: 20px;
+         }
+    }
+}
+
+// for mobile
+@media only screen and (max-width: 499px) {
+     nav#desktop {
+         display: none;
+     }
+
+       #mobile-menu {
+            position: absolute;
+            top: 38px;
+            z-index: 1;
+            right: 0px;
+            display: none;
+            list-style: none;
+            width: 50%;
+            height: 100%;
+            background-color:white;
+
+           li {
+               margin: 5px 0;
+           }
+
+           a {
+               text-decoration: none;
+               color: black;
+           }
+       }
+
+     nav#smallScreen {
+         display: flex;
+         background-color: white;
+         height: 25px;
+         width: 100%;
+
+         ul {
+             width: 80%;
+             display: flex;
+             list-style: none;
+
+             li.logo {
+                 margin-right: auto;
+                 >img{
+                     width: 120px;
+                     height: 25px;
+                 }
+             }
+         }
+
+         img.bar {
+             width: 30px;
+             height: 20px;
+         }
+     }
+}
