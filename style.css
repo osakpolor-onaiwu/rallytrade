@@ -535,7 +535,8 @@ body {
     margin: 8px 0px;
   }
   form input[type="checkbox"] {
-    width: 50px;
+    width: 20px;
+    height: 10px;
   }
   form .first-span {
     display: -webkit-box;
@@ -543,8 +544,8 @@ body {
     display: flex;
     width: 100%;
   }
-  form .first-span > input {
-    margin: -30px 0 0 -33px;
+  form .first-span > > input {
+    margin: 30px 0 0 -20px;
   }
   form .first-span p {
     font-size: 9px;
@@ -771,7 +772,8 @@ body {
     margin: 8px 0px;
   }
   form input[type="checkbox"] {
-    width: 50px;
+    width: 20px;
+    height: 10px;
   }
   form .first-span {
     display: -webkit-box;
@@ -780,7 +782,7 @@ body {
     width: 100%;
   }
   form .first-span > input {
-    margin: -30px 0 0 -33px;
+    margin: 10px 0 0 -20px;
   }
   form .first-span p {
     font-size: 9px;
